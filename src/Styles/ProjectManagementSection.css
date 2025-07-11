@@ -1,0 +1,130 @@
+:root {
+  --bravo-dark: #1b1b1b;
+  --bravo-light-gray: #d3d3d3;
+  --bravo-yellow: #ffc107;
+  --bravo-white: #ffffff;
+  --bravo-gray: #2a2a2a;
+  --bravo-black: #0e0e0e;
+}
+
+.pro-management-section {
+  background-color: var(--bravo-dark);
+  padding: 5rem 1rem;
+  color: var(--bravo-white);
+}
+
+.pro-management-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pro-management-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pro-management-header h2 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  color: var(--bravo-yellow);
+}
+
+.pro-management-header p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--bravo-light-gray);
+}
+
+.pro-services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .pro-services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pro-services-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pro-service-card {
+  background: var(--bravo-gray);
+  border-radius: 1rem;
+  padding: 3.5rem 1.5rem 2rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: visible;
+}
+
+.pro-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.pro-service-card::before {
+  content: attr(data-step);
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38px;
+  height: 38px;
+  background: var(--bravo-yellow);
+  color: var(--bravo-black);
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 4px var(--bravo-dark);
+  z-index: 1;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 👇 Hover effect for the badge */
+.pro-service-card:hover::before {
+  background-color: var(--bravo-white);
+  color: var(--bravo-dark);
+}
+
+.pro-service-icon {
+  font-size: 2.8rem;
+  color: var(--bravo-yellow);
+  margin-bottom: 1rem;
+}
+
+.pro-service-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--bravo-white);
+  position: relative;
+}
+
+.pro-service-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: var(--bravo-yellow);
+}
+
+.pro-service-content p {
+  color: var(--bravo-light-gray);
+  font-size: 1rem;
+  line-height: 1.6;
+}
