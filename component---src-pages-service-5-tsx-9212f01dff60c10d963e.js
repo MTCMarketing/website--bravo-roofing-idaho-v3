@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[416],{1773:function(e,l,t){t.r(l);var n=t(7294),a=t(3425),c=t(8882),r=t(8133);l.default=()=>n.createElement(n.Fragment,null,n.createElement(c.Z,null),n.createElement(a.Z,{serviceId:5}),n.createElement(r.Z,null))}}]);
+//# sourceMappingURL=component---src-pages-service-5-tsx-9212f01dff60c10d963e.js.map
