@@ -1,0 +1,24 @@
+# Bravo Roofing LLC - https://www.bravoroofingidaho.com
+# Public pages are open to search engines and AI search crawlers.
+# Keep the Disallow lines in step with src/data/nonPublicPaths.js.
+
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /cms
+Disallow: /test
+Disallow: /login
+Disallow: /logout
+Disallow: /hero/
+Disallow: /before/
+Disallow: /WhyChooseUsSection/
+
+Sitemap: https://www.bravoroofingidaho.com/sitemap.xml
