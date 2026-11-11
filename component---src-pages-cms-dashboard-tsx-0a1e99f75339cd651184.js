@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[7625],{5093:function(e,a,u){u.r(a);var s=u(6540),c=u(4794);a.default=()=>((0,s.useEffect)(()=>{(0,c.navigate)("/dashboard",{replace:!0})},[]),null)}}]);
+//# sourceMappingURL=component---src-pages-cms-dashboard-tsx-0a1e99f75339cd651184.js.map
